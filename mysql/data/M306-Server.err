@@ -1,0 +1,39 @@
+171114  8:36:22 [Note] Plugin 'FEDERATED' is disabled.
+171114  8:36:22 InnoDB: The InnoDB memory heap is disabled
+171114  8:36:22 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+171114  8:36:22 InnoDB: Compressed tables use zlib 1.2.3
+171114  8:36:23 InnoDB: Initializing buffer pool, size = 128.0M
+171114  8:36:23 InnoDB: Completed initialization of buffer pool
+InnoDB: The first specified data file D:\PRIMUS\ITE3 RESOURCES\USBWebserver v8.5\mysql\data\ibdata1 did not exist:
+InnoDB: a new database to be created!
+171114  8:36:23  InnoDB: Setting file D:\PRIMUS\ITE3 RESOURCES\USBWebserver v8.5\mysql\data\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+171114  8:36:23  InnoDB: Log file D:\PRIMUS\ITE3 RESOURCES\USBWebserver v8.5\mysql\data\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file D:\PRIMUS\ITE3 RESOURCES\USBWebserver v8.5\mysql\data\ib_logfile0 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+171114  8:36:23  InnoDB: Log file D:\PRIMUS\ITE3 RESOURCES\USBWebserver v8.5\mysql\data\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file D:\PRIMUS\ITE3 RESOURCES\USBWebserver v8.5\mysql\data\ib_logfile1 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: 127 rollback segment(s) active.
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+171114  8:36:25  InnoDB: Waiting for the background threads to start
+171114  8:36:26 InnoDB: 1.1.8 started; log sequence number 0
+171114  8:36:34 [Note] Plugin 'FEDERATED' is disabled.
+171114  8:36:34 InnoDB: The InnoDB memory heap is disabled
+171114  8:36:34 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+171114  8:36:34 InnoDB: Compressed tables use zlib 1.2.3
+171114  8:36:35 InnoDB: Initializing buffer pool, size = 128.0M
+171114  8:36:35 InnoDB: Completed initialization of buffer pool
+171114  8:36:35 InnoDB: highest supported file format is Barracuda.
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+171114  8:36:35  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+171114  8:36:35  InnoDB: Waiting for the background threads to start
+171114  8:36:36 InnoDB: 1.1.8 started; log sequence number 1595675
