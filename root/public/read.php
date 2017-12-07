@@ -88,7 +88,6 @@ if (isset($_POST['submit']))
 	}
 }?>
 
-
 <h2>Find user based on location</h2>
 
 <form method="post">

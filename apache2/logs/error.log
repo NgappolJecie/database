@@ -1,22 +1,9 @@
-[Tue Dec 05 08:51:13 2017] [notice] Apache/2.2.21 (Win32) PHP/5.3.9 configured -- resuming normal operations
-[Tue Dec 05 08:51:13 2017] [notice] Server built: Sep 10 2011 11:34:11
-[Tue Dec 05 08:51:13 2017] [notice] Parent: Created child process 4748
-[Tue Dec 05 08:51:13 2017] [notice] Child 4748: Child process is running
-[Tue Dec 05 08:51:13 2017] [notice] Child 4748: Acquired the start mutex.
-[Tue Dec 05 08:51:13 2017] [notice] Child 4748: Starting 64 worker threads.
-[Tue Dec 05 08:51:13 2017] [notice] Child 4748: Starting thread to listen on port 80.
-[Tue Dec 05 08:51:13 2017] [notice] Child 4748: Starting thread to listen on port 80.
-[Tue Dec 05 09:06:03 2017] [error] [client ::1] PHP Parse error:  syntax error, unexpected T_ELSE, expecting ',' or ';' in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 91, referer: http://localhost/public/index.php
-[Tue Dec 05 09:06:52 2017] [error] [client ::1] PHP Notice:  Undefined variable: output in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:06:53 2017] [error] [client ::1] PHP Notice:  Undefined variable: output in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:07:08 2017] [error] [client ::1] PHP Notice:  Undefined variable: output in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:07:09 2017] [error] [client ::1] PHP Notice:  Undefined variable: output in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:07:10 2017] [error] [client ::1] PHP Notice:  Undefined variable: output in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:07:11 2017] [error] [client ::1] PHP Notice:  Undefined variable: output in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:07:51 2017] [error] [client ::1] PHP Notice:  Undefined variable: result in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:08:34 2017] [error] [client ::1] PHP Notice:  Undefined variable: sql in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:08:36 2017] [error] [client ::1] PHP Notice:  Undefined variable: sql in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:09:36 2017] [error] [client ::1] PHP Fatal error:  Call to undefined function escape() in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:09:37 2017] [error] [client ::1] PHP Fatal error:  Call to undefined function escape() in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:12:26 2017] [error] [client ::1] PHP Fatal error:  Call to undefined function escape() in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
-[Tue Dec 05 09:12:27 2017] [error] [client ::1] PHP Fatal error:  Call to undefined function escape() in C:\\Users\\ITE32D-16\\Desktop\\USBWebserver v8.5\\root\\public\\read.php on line 98, referer: http://localhost/public/index.php
+[Fri Dec 08 01:05:08 2017] [notice] Apache/2.2.21 (Win32) PHP/5.3.9 configured -- resuming normal operations
+[Fri Dec 08 01:05:08 2017] [notice] Server built: Sep 10 2011 11:34:11
+[Fri Dec 08 01:05:08 2017] [notice] Parent: Created child process 3056
+[Fri Dec 08 01:05:08 2017] [notice] Child 3056: Child process is running
+[Fri Dec 08 01:05:08 2017] [notice] Child 3056: Acquired the start mutex.
+[Fri Dec 08 01:05:08 2017] [notice] Child 3056: Starting 64 worker threads.
+[Fri Dec 08 01:05:08 2017] [notice] Child 3056: Starting thread to listen on port 8080.
+[Fri Dec 08 01:05:08 2017] [notice] Child 3056: Starting thread to listen on port 8080.
+[Fri Dec 08 01:05:27 2017] [error] [client ::1] File does not exist: C:/Users/Admin/Desktop/database/root/root
