@@ -9,14 +9,14 @@
 
 if (isset($_POST['submit']))
 {
-	
+
 	require "/config.php";
 	require "/common.php";
 
-	try 
+	try
 	{
 		$connection = new PDO($dsn, $username, $password, $options);
-		
+
 		$new_user = array(
 			"firstname" => $_POST['firstname'],
 			"lastname"  => $_POST['lastname'],
@@ -31,26 +31,26 @@ if (isset($_POST['submit']))
 				implode(", ", array_keys($new_user)),
 				":" . implode(", :", array_keys($new_user))
 		);
-		
+
 		$statement = $connection->prepare($sql);
 		$statement->execute($new_user);
 	}
 
-	catch(PDOException $error) 
+	catch(PDOException $error)
 	{
 		echo $sql . "<br>" . $error->getMessage();
 	}
-	
+
 }
 ?>
 
 <?php require "templates/header.php"; ?>
 
-<?php 
-if (isset($_POST['submit']) && $statement) 
+<?php
+if (isset($_POST['submit']) && $statement)
 { ?>
 	<blockquote><?php echo $_POST['firstname']; ?> successfully added.</blockquote>
-<?php 
+<?php
 } ?>
 
 <h2>Add a user</h2>

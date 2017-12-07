@@ -1,15 +1,68 @@
-<?php echo form_open('posts/create'); ?>
-  <div class="form-group">
-    <label>Title</label>
-    <input type="text" class="form-control" name="title" placeholder="Add Title">
-  </div>
-  <div class="form-group">
-    <label>Distributor</label>
-    <input type="text" class="form-control" name="Shared_by" placeholder="Add Name">
-   </div>
-  <div class="form-group">
-    <label>Body</label>
-    <textarea id="editor1" class="form-control" name="body" placeholder="Add Body"></textarea>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
+<?php
+
+/**
+ * Use an HTML form to create a new entry in the
+ * users table.
+ *
+ */
+
+
+if (isset($_POST['submit']))
+{
+
+	require "/config.php";
+	require "/common.php";
+
+	try
+	{
+		$connection = new PDO($dsn, $username, $password, $options);
+
+		$new_user = array(
+			"topic" => $_POST['topic'],
+      "name"     => $_POST['name'],
+			"content"  => $_POST['content']
+		);
+
+		$sql = sprintf(
+				"INSERT INTO %s (%s) values (%s)",
+				"users",
+				implode(", ", array_keys($new_user)),
+				":" . implode(", :", array_keys($new_user))
+		);
+
+		$statement = $connection->prepare($sql);
+		$statement->execute($new_user);
+	}
+
+	catch(PDOException $error)
+	{
+		echo $sql . "<br>" . $error->getMessage();
+	}
+
+}
+?>
+
+<?php require "templates/header.php"; ?>
+
+<?php
+if (isset($_POST['submit']) && $statement)
+{ ?>
+	<blockquote><?php echo $_POST['topic']; ?> successfully added.</blockquote>
+<?php
+} ?>
+
+<h2>Create Forum</h2>
+
+<form method="post">
+	<label for="topic">Topic</label>
+	<input type="text" name="topic" id="topic">
+	<label for="name">Name</label>
+	<input type="text" name="name" id="name">
+	<label for="content">Content</label>
+	<input type="text" name="content" id="content">
+	<input type="submit" name="submit" value="Submit">
 </form>
+
+<a href="index.php">Back to Home</a>
+
+<?php require "templates/footer.php"; ?>

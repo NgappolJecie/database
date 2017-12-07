@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Simple Database App</title>
+	<title>Forum</title>
 
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,8 +16,8 @@
 	<?php include "templates/header.php"; ?>
 
 <ul>
-	<li><a href="create.php"><strong>Create</strong></a> - add a user</li>
-	<li><a href="read.php"><strong>Read</strong></a> - find a user</li>
+	<li><a href="topic.php"><strong>Topic</strong></a> - Add Topic</li>
+	<li><a href="entry.php"><strong>Entry</strong></a> - View Entries</li>
 </ul>
 
 <?php include "templates/footer.php"; ?>
