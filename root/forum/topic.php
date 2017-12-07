@@ -56,10 +56,10 @@ if (isset($_POST['submit']) && $statement)
 <form method="post">
 	<label for="topic">Topic</label>
 	<input type="text" name="topic" id="topic">
-	<label for="name">Name</label>
-	<input type="text" name="name" id="name">
 	<label for="content">Content</label>
 	<input type="text" name="content" id="content">
+	<label for="name">Name</label>
+	<input type="text" name="name" id="name">
 	<input type="submit" name="submit" value="Submit">
 </form>
 
