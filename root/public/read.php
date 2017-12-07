@@ -1,22 +1,15 @@
 <?php
-
-/**
- * Function to query information based on 
- * a parameter: in this case, location.
- *
- */
-
-if (isset($_POST['submit'])) 
+if (isset($_POST['submit']))
 {
-	
-	try 
-	{	
+
+	try
+	{
 		require "/config.php";
 		require "/common.php";
 
 		$connection = new PDO($dsn, $username, $password, $options);
 
-		$sql = "SELECT * 
+		$sql = "SELECT *
 						FROM users
 						WHERE location = :location";
 
@@ -28,7 +21,7 @@ if (isset($_POST['submit']))
 
 		$result = $statement->fetchAll();
 
-		$sql = "SELECT * 
+		$sql = "SELECT *
 						FROM users
 						WHERE lastname = :lastname";
 
@@ -41,19 +34,19 @@ if (isset($_POST['submit']))
 
 		$result = $statement->fetchAll();
 	}
-	
-	catch(PDOException $error) 
+
+	catch(PDOException $error)
 	{
 		echo $sql . "<br>" . $error->getMessage();
 	}
 }
 ?>
 <?php require "templates/header.php"; ?>
-		
-<?php  
-if (isset($_POST['submit'])) 
+
+<?php
+if (isset($_POST['submit']))
 {
-	if ($result && $statement->rowCount() > 0) 
+	if ($result && $statement->rowCount() > 0)
 	{ ?>
 		<h2>Results</h2>
 
@@ -70,8 +63,8 @@ if (isset($_POST['submit']))
 				</tr>
 			</thead>
 			<tbody>
-	<?php 
-		foreach ($result as $row) 
+	<?php
+		foreach ($result as $row)
 		{ ?>
 			<tr>
 				<td><?php echo escape($row["id"]); ?></td>
@@ -82,18 +75,18 @@ if (isset($_POST['submit']))
 				<td><?php echo escape($row["location"]); ?></td>
 				<td><?php echo escape($row["date"]); ?> </td>
 			</tr>
-		<?php 
+		<?php
 		} ?>
 		</tbody>
 	</table>
-	<?php 
+	<?php
 	}
-	else 
+	else
 	{ ?>
 		<blockquote>No results found for <?php echo escape($_POST['location']); ?>.</blockquote>
 	<?php
-	} 
-}?> 
+	}
+}?>
 
 
 <h2>Find user based on location</h2>
