@@ -34,8 +34,7 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
-<td><input type="submit" name="Submit" value="Submit" />
-<input type="reset" name="Submit2" value="Reset" /></td>
+<td><input type="submit" name="Submit" value="Submit" /></td>
 </tr>
 </table>
 </td>

@@ -109,9 +109,9 @@ mysql_close();
 <td>
 <table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#FFFFFF">
 <tr>
-<td width="18%"><strong>Name</strong></td>
-<td width="3%">:</td>
-<td width="79%"><input name="a_name" type="text" id="a_name" size="45"></td>
+<td width="15%"><strong>Name</strong></td>
+<td width="5%">:</td>
+<td width="75%"><input name="a_name" type="text" id="a_name" size="45"></td>
 </tr>
 <tr>
 <td><strong>Email</strong></td>
